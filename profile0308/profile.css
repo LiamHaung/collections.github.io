@@ -1,0 +1,202 @@
+* {
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 120px;
+  background: rgb(36, 120, 255, 0.5);
+  z-index: 100;
+  text-align: center;
+  top: 0;
+}
+.button li:hover {
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  /* border: 1px solid rgb(0, 0, 0); */
+  color: rgb(36, 120, 255);
+  border-radius: 5%;
+}
+.button li:hover a {
+  color: rgb(36, 120, 255);
+}
+.button > ul {
+  list-style: none;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.button a {
+  text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+}
+.button li {
+  padding-right: 12px;
+  padding-left: 12px;
+  /* border: 1px solid red; */
+}
+.navbar {
+  background-color: rgb(36, 120, 255);
+  /* border: 1px solid red; */
+  width: 38%;
+  border-bottom-left-radius: 61px;
+  border-bottom-right-radius: 61px;
+  top: 0;
+  height: 120px;
+}
+.logoBox img {
+  width: 26%;
+  /* border: 1px solid red; */
+  padding-bottom: 20px;
+}
+/* 以上navbar */
+.carousel-item {
+  width: 100%;
+  align-content: center;
+}
+.carousel {
+  margin-top: 120px;
+}
+/* mainbg */
+.bgBox {
+  height: 500px;
+  background-color: rgb(36, 120, 255);
+}
+.mainBg {
+  text-align: center;
+  overflow: hidden;
+}
+.bgBox h1 {
+  padding-top: 170px;
+  color: rgb(255, 255, 255);
+}
+.title1 {
+  font-size: 46px;
+  font-weight: 700;
+}
+.btn {
+  /* border: 1px solid #fff; */
+  /* display: inline-block; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* overflow: hidden; */
+  height: 400px;
+}
+
+.btn:before {
+  content: "";
+  width: 550px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: -250px;
+  left: -500px;
+  transform: translateX(-50%);
+  border-radius: 200px;
+  animation: wave 6s infinite linear;
+  transform: rotate(30deg);
+  opacity: 0.21;
+}
+.btn::after {
+  content: "";
+  width: 850px;
+  height: 850px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0px;
+  left: 400px;
+  border-radius: 380px;
+  animation: wave 10s infinite linear;
+  transform: rotate(0deg);
+  opacity: 0.2;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-50%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+.boxAnimation .boxAni {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  top: -50;
+  animation: ball 13s infinite linear;
+}
+@keyframes ball {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-700%, -2000%);
+  }
+}
+.boxAnimation .boxAni2 {
+  width: 60px;
+  height: 60px;
+  /* transform: rotate(150deg); */
+  border-radius: 35%;
+  border: 1px solid rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255); */
+  top: -50;
+  animation: ball2 5s infinite linear;
+}
+@keyframes ball2 {
+  0% {
+    transform: translate(10%, 10%);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(600%, -1000%);
+    opacity: 0.8;
+  }
+}
+/* card */
+.cardRow {
+  display: flex;
+}
+.card {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.card-title {
+  color: rgb(36, 120, 255);
+  font-weight: 700;
+  font-size: 30px;
+}
+.card:hover img {
+  opacity: 0.5;
+}
+.card:hover a {
+  background-color: rgb(52, 140, 255);
+  padding-right: 120px;
+  transition: all 0.8s 0s linear;
+}
+.card:hover a {
+  background-color: rgb(52, 140, 255);
+  padding-right: 45px;
+  padding-left: 45px;
+  transition: all 0.4s 0s linear;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  border-radius: 20px;
+}
+.card a {
+  text-decoration: none;
+  background-color: #fff;
+}
