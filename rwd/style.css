@@ -1,8 +1,11 @@
+* {
+  position: relative;
+  margin: 0;
+}
 .headline {
   font-size: 10px;
   font-weight: bold;
-  margin-bottom: 15px;
-  text-align: right;
+  text-align: center;
   background-color: #000;
   color: #fff;
   padding-top: 10px;
@@ -22,8 +25,6 @@
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.876);
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .main-background img {
   width: 100%;
@@ -37,11 +38,12 @@
   color: #fff;
   cursor: pointer;
   padding: 10px;
+  flex-direction: column;
 }
 
 .main-news {
   margin-top: 5px;
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(230, 230, 230);
   text-align: center;
   -webkit-filter: saturate(0.5);
   position: relative;
@@ -51,7 +53,7 @@
 }
 .news-logo {
   width: 4%;
-  padding-top: 40px;
+  padding-top: 76px;
 }
 .main-news .main-news-title {
   font-size: 24px;
@@ -70,7 +72,7 @@
   align-items: center;
 }
 .text-decoration .line {
-  width: 120px;
+  width: 280px;
   height: 2px;
   background-color: #000;
 }
@@ -91,7 +93,6 @@
 
 .news-card-row {
   padding-top: 80px;
-  /* position: relative; */
   display: flex;
   justify-content: center;
   z-index: 150;
@@ -114,9 +115,7 @@
   padding-left: 20px;
 }
 .card {
-  /* background-color: blue; */
   width: 33.3%;
-  /* border: 1px solid red; */
   padding: 15px;
   border: 0;
 }
@@ -134,8 +133,12 @@
   padding: 10px;
   display: flex;
   justify-content: center;
+  margin-right: 5px;
 }
-.student-news-row {
+.student-imgbox {
+  width: 95%;
+}
+.desktop-student-news-row {
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
@@ -147,11 +150,9 @@
   background-color: rgb(211, 211, 211);
   width: 14%;
   border-radius: 20px;
-  overflow: hidden;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 5px;
-  /* border: 1px solid red; */
 }
 .student-news-card-title h4 {
   background-color: rgb(48, 120, 168);
@@ -172,8 +173,8 @@
   height: 30%;
 }
 .info-user {
-  width: 70%;
-  height: 70%;
+  width: 20%;
+  height: 20%;
 }
 .user-phone {
   width: 40%;
@@ -184,6 +185,8 @@
 }
 .student-name p {
   font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .student-date p {
   font-size: 14px;
@@ -195,24 +198,112 @@
 .student-news-card-imgbox:hover img {
   opacity: 0.5;
 }
+.mobile-student-news-row {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 100%;
+  flex-wrap: wrap;
+  display: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.mobile-student-news-card {
+  width: 85%;
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 45px;
+}
+.mobile-student-news-title {
+  background-color: rgb(48, 120, 168);
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.mobile-student-news-title h1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.mobile-student-news-info p {
+  font-size: 14px;
+  padding-left: 10px;
+  margin-bottom: -6px;
+}
+.mobile-student-news-info h6 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.mobile-student-news-info {
+  display: flex;
+  align-items: baseline;
+}
 .footer {
   padding-top: 80px;
-  padding-bottom: 80px;
   text-align: center;
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(41, 41, 41);
   color: #fff;
+  display: block;
 }
+.footer-content h1 {
+  font-size: 24px;
+}
+.info {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: rgb(85, 85, 85);
+}
+.map-box h1 {
+  font-size: 16px;
+}
+.map-box {
+  padding-right: 70px;
+  text-align: left;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  padding-right: 50px;
+  text-align: left;
+}
+.footer-info p {
+  color: rgb(133, 133, 133);
+}
+.footer-info-title h1 {
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.map-img {
+  width: 100%;
+}
+
 @media (max-width: 1250px) {
   .list {
     flex-wrap: wrap;
+  }
+  .headline {
+    font-size: 9px;
   }
   .main-background img {
     width: 100%;
   }
   .product {
     width: 45%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 0;
   }
   .news-card-img {
     width: 90%;
@@ -223,6 +314,9 @@
   .news-logo {
     width: 8%;
   }
+  .textContent h1 {
+    font-size: 24px;
+  }
   .card-row {
     flex-wrap: wrap;
   }
@@ -232,15 +326,31 @@
   .card:hover img {
     opacity: 0.5;
   }
-  .student-news-row {
+  .desktop-student-news-row {
     flex-wrap: wrap;
   }
   .student-news-card {
     width: 45%;
   }
   .info-user {
-    width: 50%;
-    height: 50%;
+    width: 12%;
+    height: 12%;
+  }
+  .footer-info {
+    display: block;
+  }
+  .footer-content h1 {
+    font-size: 20px;
+  }
+  .map-box {
+    padding-right: 5px;
+    text-align: center;
+  }
+  .info p {
+    font-size: 14px;
+  }
+  .map-img {
+    width: 100%;
   }
 }
 
@@ -272,20 +382,45 @@
   .card {
     width: 90%;
   }
-  .textContent .h1 {
+  .textContent h1 {
     font-size: 20px;
   }
   .textContent p {
     font-size: 12px;
   }
   .text-decoration .main-news-title {
-    font-size: 18px;
+    font-size: 14px;
   }
   .student-news-card {
     width: 90%;
   }
   .info-user {
-    width: 40%;
-    height: 40%;
+    width: 12%;
+    height: 12%;
+  }
+  .headline {
+    font-size: 8px;
+  }
+  .footer-info {
+    display: none;
+  }
+  .footer-content h1 {
+    font-size: 16px;
+  }
+  .info p {
+    font-size: 14px;
+  }
+  .map-box {
+    padding-right: 5px;
+    text-align: center;
+  }
+  .map-img {
+    width: 90%;
+  }
+  .desktop-student-news-row {
+    display: none;
+  }
+  .mobile-student-news-row {
+    display: block;
   }
 }
