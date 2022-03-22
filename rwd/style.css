@@ -402,6 +402,10 @@
   .main-news {
     padding-bottom: 1px;
   }
+  .news-card h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
   .card-row {
     flex-wrap: wrap;
     justify-content: center;
